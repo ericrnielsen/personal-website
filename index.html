@@ -251,47 +251,53 @@
     /////////////////////////////////////////////////////////////////////////////////////--> 
     <section id="travel" class="bg-light-gray">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">travel</h2>
                     <h3 class="section-subheading text-muted">intro text for travel section...</h3>
                 </div>
             </div>
-            <!--////////////////////////////////////////////////////////////////////////////////////
-            //  PERU, COLUMBIA 
-            /////////////////////////////////////////////////////////////////////////////////////-->   
+
             <div class="row">
+            <!--////////////////////////////////////////////////////////////////////////////////////
+            //  CHINA
+            /////////////////////////////////////////////////////////////////////////////////////-->   
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/travel/s_america.jpg" class="img-responsive img-circle" alt="">
-                        <!-- will want to make the image a link to another page -->
-                        <h4>peru, columbia</h4>
-                        <p class="text-muted">spring 2017</p>
+                        <a onclick="load12grid('china - summer 2008')" href="#image-12grid-modal" class="portfolio-link" data-toggle="modal">
+                            <img src="img/travel/china-2008/china-2008-1-square.jpg" class="img-responsive img-circle" alt="">
+                            <h4>china</h4>
+                            <p class="text-muted">summer 2008</p>
+                        </a>
                     </div>
                 </div>
             <!--////////////////////////////////////////////////////////////////////////////////////
-            //  DOMINICAN REPUBLIC 
-            /////////////////////////////////////////////////////////////////////////////////////--> 
+            //  TBD
+            /////////////////////////////////////////////////////////////////////////////////////-->   
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/travel/dominican_republic.jpg" class="img-responsive img-circle" alt="">
-                        <!-- will want to make the image a link to another page -->
-                        <h4>dominican republic</h4>
-                        <p class="text-muted">spring 2016</p>
+                        <a onclick="load12grid('china - summer 2008')" href="#image-12grid-modal" class="portfolio-link" data-toggle="modal">
+                            <img src="img/coming-soon-square.png" class="img-responsive img-circle" alt="">
+                            <h4>coming soon</h4>
+                            <p class="text-muted">coming soon</p>
+                        </a>
                     </div>
                 </div>
             <!--////////////////////////////////////////////////////////////////////////////////////
-            //  CAMBODIA, VIETNAM, THAILAND, SINGAPORE 
-            /////////////////////////////////////////////////////////////////////////////////////--> 
+            //  TBD
+            /////////////////////////////////////////////////////////////////////////////////////-->   
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/travel/se_asia.jpg" class="img-responsive img-circle" alt="">
-                        <!-- will want to make the image a link to another page -->
-                        <h4>cambodia, vietnam, thailand, singapore</h4>
-                        <p class="text-muted">winter 2015</p>
+                        <a onclick="load12grid('china - summer 2008')" href="#image-12grid-modal" class="portfolio-link" data-toggle="modal">
+                            <img src="img/coming-soon-square.png" class="img-responsive img-circle" alt="">
+                            <h4>coming soon</h4>
+                            <p class="text-muted">coming soon</p>
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -319,7 +325,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="img/coming-soon.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>project 1</h4>
@@ -336,7 +342,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="img/coming-soon.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>project 2</h4>
@@ -353,7 +359,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <img src="img/coming-soon.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>project 3</h4>
@@ -376,7 +382,6 @@
             </div>
         </div>
     </aside>
-
 
     <!--////////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////
@@ -412,8 +417,111 @@
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////--> 
 
-     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+   <!--////////////////////////////////////////////////////////////////////////////////////
+    //  12 IMAGE GRID MODAL
+    /////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="portfolio-modal modal fade" id="image-12grid-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Exit modal graphic (X) -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal header -->
+                <div class="modal-body" id="image-12grid-modal-header" style="margin-bottom:20px">
+                    <h2 id="image-12grid-modal-header-text">
+                        <!-- text set dynamically by load12grid() -->
+                    </h2>
+                </div>
+                <!-- Image grid -->
+                <div class="container">
+                        <div class="row">
+                            <!-- Image 1 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-1">
+                                <a onclick="loadimage('1')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img1" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-2">
+                                <a onclick="loadimage('2')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img2" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 3 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-3">
+                                <a onclick="loadimage('3')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img3" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 4 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-4">
+                                <a onclick="loadimage('4')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img4" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 5 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-5">
+                                <a onclick="loadimage('5')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img5" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 6 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-6">
+                                <a onclick="loadimage('6')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img6" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 7 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-7">
+                                <a onclick="loadimage('7')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img7" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 8 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-8">
+                                <a onclick="loadimage('8')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img8" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 9 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-9">
+                                <a onclick="loadimage('9')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img9" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 10 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-10">
+                                <a onclick="loadimage('10')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img10" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 11 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-11">
+                                <a onclick="loadimage('11')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img11" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+                            <!-- Image 12 -->
+                            <div class="col-md-3 col-sm-3 portfolio-item" id="image-12">
+                                <a onclick="loadimage('12')" href="#image-display-modal" class="portfolio-link" data-toggle="modal">
+                                    <img id="image-12grid-modal-img12" src="" class="img-responsive" alt="">     <!-- src set dynamically by load12grid() -->
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+   <!--////////////////////////////////////////////////////////////////////////////////////
+    //   IMAGE DISPLAY
+    /////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="portfolio-modal modal fade" id="image-display-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -424,21 +532,11 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-lg-12">
                             <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <!-- Photo and caption -->
+                                <img id="image-display-modal-bigimage" class="img-responsive img-centered" src="" alt="">
+                                <h4> <!-- caption later? --> </h4>
                             </div>
                         </div>
                     </div>
@@ -447,78 +545,136 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
+    //  JAVASCRIPT 
+    ////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////-->
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    //  DEFAULT 
+    /////////////////////////////////////////////////////////////////////////////////////-->
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    //  CUSTOM 
+    /////////////////////////////////////////////////////////////////////////////////////--> 
+     <script type="text/javascript">
+
+        ///////////////////////////////////////////////////////////////////
+        // Function to load image-12grid-modal content
+        ///////////////////////////////////////////////////////////////////
+        function load12grid(id) {
+
+            // Set local variable
+            localStorage.setItem("image-12grid-modal-id", id);
+
+            // Header text is always the value passed in
+            document.getElementById("image-12grid-modal-header-text").innerHTML = id;
+
+            // Determine beginning of path leading to thumbnail images
+            switch (id) {
+                case 'china - summer 2008':
+                    img_begin = 'img/travel/china-2008/china-2008-';
+                    break;
+                default:
+                    img_begin = 'img/travel/china-2008/china-2008-';
+                    break;                
+            }
+
+            // Set thumbnail image paths
+            document.getElementById("image-12grid-modal-img1").src = img_begin + '1.jpg';
+            document.getElementById("image-12grid-modal-img2").src = img_begin + '2.jpg';
+            document.getElementById("image-12grid-modal-img3").src = img_begin + '3.jpg';
+            document.getElementById("image-12grid-modal-img4").src = img_begin + '4.jpg';
+            document.getElementById("image-12grid-modal-img5").src = img_begin + '5.jpg';
+            document.getElementById("image-12grid-modal-img6").src = img_begin + '6.jpg';
+            document.getElementById("image-12grid-modal-img7").src = img_begin + '7.jpg';
+            document.getElementById("image-12grid-modal-img8").src = img_begin + '8.jpg';
+            document.getElementById("image-12grid-modal-img9").src = img_begin + '9.jpg';
+            document.getElementById("image-12grid-modal-img10").src = img_begin + '10.jpg';
+            document.getElementById("image-12grid-modal-img11").src = img_begin + '11.jpg';
+            document.getElementById("image-12grid-modal-img12").src = img_begin + '12.jpg';
+
+        } // End function
+
+        ///////////////////////////////////////////////////////////////////
+        // Function to load image-display-modal content
+        ///////////////////////////////////////////////////////////////////
+        function loadimage(num) {
+
+            // Read local variable
+            id = localStorage.getItem("image-12grid-modal-id");
+
+            // Determine which image to load
+            switch (id) {
+                // BEGIN CHINA
+                case 'china - summer 2008':
+                    switch (num) {
+                        case '1':
+                            google_url = "https://lh3.googleusercontent.com/SLxq_OC025Ny2yPnmxiIKVx7jULt-ZoQywQAGOo_8hnBhp77IsygY_GW8XUmuGaFu8z4ElpyBS5yGrreFPIQ9QXo8cd-rpAgJHNt2-f2iB3NBGX3mQo-YGtCSmUY8G_c-YStLH3N85Zrh1hZXu4deEq5sUAAwuqntgVU-MN1yXZNRZ-VDNLGdWgtDbTmqoYiK90b7PQtV0lHZV85fbisUNdhnBcoA8ll23q-TbfmEBPzGN7mnCP4D2GY6Btg6JLt-nXjHllDP89AuqOZrxLQyiFPNSLoFUCvuddm8HKe_ikPgDDMPK_RzT97NygeH_9JcF2oapVnnBIs7S-NM4fy-oLs0g3Plxs2CZ447IJ8V7SIECwpHUW9CTIHjV-BRI8ZQSYKoX7eEFRvzB3OO94DF4enC7W4oqMO4uwVbzY7Td4aJxGbAFK6BCpUgNKFwncDBYwQv82LYAR0aSbciu_kDjqhHI281QRaEZVFAGxG1eDDno8KbXZgERBWrQHaraDc8bZW5VX7q4_2BtU_eFnBE_AUJe5H6YUlaEbZhsRXI-QKdanRGtr_D0Swe1VwgZhk2hXDb2CPvQbeZv2S0rAw_Yeh4rI46yXfgOWWeqwl_CWmFrm0TKU2=w2272-h1704-no";
+                            break;      
+                        case '2':
+                            google_url = "https://lh3.googleusercontent.com/x2U7BosaB6XRk42eIfnqnw9pRPBD4cBTa3uS2oOabDdsULBCZte7z9ViWDBAo8doyZGb32fgSBiPbwd4-QlpdMCko2Vr2ReclQV7WfnoKeD54lhlGnK9f7_335RpCT4crJj5Mivuio8m96a2MhtgfFHHffp0yULLzOcF4-EkyUg4Bp4SSsL8xoFgsNkF8Lq5BtjmR3ptmMdzr_j8IDqhcadrMk19QItVWc_xvcNUfZhRcf5ywXhDpVRgOk_GychMlT5kKTnrZ8CQexUCk62cAP8a9PbmZrUxxPRZs6zTLHz_ipACmeeTXxhrI4RIN8cd0z3_fvoU7tuxtT9DdJxHdtDdTXOlADJ7LyyV3HfaGB56r6OtSZ5qhKtvGHrCcOkxGJWfGfrGq6i8117hGgbq_ZP39CtlXIkV4HRRCRDEzJVPCpi8p9K1oCUMb2F50bXsaTCrLseuZ1h6nTiW481GQtHibe2iVgpjfu9YW_UVsa2ZGgzRwA-7JzS0k2q21I8A1RVFjQ77nsek61DyTQ7c5wfBbcLM5Dop6vyfPWbYgZ2KAzzsEXGRXogD0UNmE1MmfcIwjUYDWVMHtNbedag6qaEwA5NgLdGCFXyO6WlXJgwQw3Mz=w2272-h1704-no";
+                            break; 
+                        case '3':
+                            google_url = "https://lh3.googleusercontent.com/krWrf40_jYBJk6ZCAhYgnIUCmDD_sunihfoGnRHN3X5NQlWGDJZK_8MZt00WkzopktfGpti4SXVMARaENGGofejOxoQo0xtxsZfgiqr2mq986HE6QSW83EleItB5ZA8969pkenTycoTtZBpxcrMfliV3mzGo2B9e_pqLJPxfthurXnv1dAon-ge7vWUre3DLm9J6frTyKz3lQSjwC3EOCz1F2DtCwVTr4so_0kOrYEYDfVkvXWUlzI76mH6QmnHSIu0YD-1_6fVY5daF6A9GZquQZzPmcbmitQfzCAF3YcUtJlHhs1qx2b1zfwYe6wTQkLe_2EgvfsLoMdkLFM4tPxEeV8Gs16tUB74Jd1cx_yZF76505ar2ZOfhKk7-y6IAR8PyzFRwOsI_olo2S4eDwV273-WelbonRqVUiQwRIGphgP0o9-QV3AOCJUZytZKFuUOv3ZBPcAsQtsRZFKo9ze915PlhcecuoctG24Py_bzMFeZt_Rm0uPLeHQw1nqpfAGMb9YE2J8BCeVXVpgFrojz-Re4u9LFIhHxdsnJDcZPtNuyoS5crTkEXxWb-O2WM4juK54j4oSB75wGJ8YZGeERYWqb8gHZSI9xlz9PAqbmba9Oh=w2272-h1704-no";
+                            break;      
+                        case '4':
+                            google_url = "https://lh3.googleusercontent.com/kBhGadMu10wJHo5VffCpQwOepE3tASMzANvxAuIq9rpLlTw7xPE6qYe-Yf6Zag5uH2qyjoPW82HjTs5h07BoTI7tqsvbamDZb20e99SpoN51XwNuHFjoHLDO9twWp-0YnI_TVJIDJ4dRDjTO-ybmz9bJQ8OwEau46HlyCYRiv0ORSKPH0cd2ftKJDK7cbet-9anEbwBMBxUvTrA6HJv7rW_Ha8jAsc1CeBu4il6TCYWhaZg8kEGE5cNK1SecNTSopp55eZ7oa8xHS-xjYLebhOnNAF1_18g6NBYKMv8daLuMdXVw1boiuRzdBVvpboV2IW87MrXuJJisL0zrpY8q2j-eRxRUZWmdRb7PZiFuatw1TbhZGyvbiv2V4f9fma2xO6VQEpzVEyr-FvPP47nNOtIZkYeO2AS_m4Jtw_l3R_XnDO8jvXlLpCbR21GRyXE6qD0wb9TPWEnoU2_rHs_FP9bXi-P9kx3uQ_voxnGE6HFRS8glKuhFl6zEG8L7es4F4jL-gW6_cS1pKwIlnuRE22zXiAexrMklgpDYBVBX0yK0wWXRMkMYRs3MTrFyJtdH0Y4Dug-24XBslQk8Cm6kpZxsG1_mliqsk1KgUdnqSE0WgNd1=w2204-h1653-no";
+                            break; 
+                        case '5':
+                            google_url = "https://lh3.googleusercontent.com/6xQrs_6qbbHUv8nq0zyb-MbHr3aMLnjejubd3BqSpZOPmQHPrNjmInQ6YocULgQuYj6UvQQwqfolNP4-3i9En4LR3QQkIQmSgJaap8dPHi3wk7gR8QJWJpiIR74waDp3XJbSfgXKAs5iYruSEFvIZmW4BX7I-A6eYFUEeoOG2uO3IypCGbbkNjxcRtLr--gSJiPDY1TahMvEqqM5mFIN7bHHeFPzHQiwEGkA-wgILSzL8LGhBijNFvlua4k86XHeKthJgaTEI76HRg0voGxJq6L3rdgoyTYH3p3g_TJyJHDZB7HSeYRowxL5rJ18jtLjXlamx9U4woKHtI0qSn658YiSWYAMngyTiq2oJEv50NTeQLCHslb80LW5FMJ7402GHPHVDuxRf51cZJ1vm14dr4R_EzohzJjqjMAgC_ObPeR2wNbxtxVhS9Oppo5-DI0rOA2cFT6TCC8l5x0k2FZorU5JNL0vGYk6ldkCgYcyXriMCv5W1DgB5uX0M3N48do4IAfj5KhIx_lK2ewWXDam5gkPI2X1M7GvgqaWnyBrn_jl708LXp9Ilu4jA51Oon8eu0wuVI6Z0QtTx0ORIrWn8Unwxj5mdSbQ17II70vt_qfGkRJW=w2272-h1704-no";
+                            break;      
+                        case '6':
+                            google_url = "https://lh3.googleusercontent.com/BVfoAzIqgcY37R8laQ2FDFsrdHYFCNbA_SoPlKIG-pDZMcMITzd4EGEHqXtCNqaJGHFHs3cjXbPYpu56m9F0oWiE-dJylK80E9vjiHoovLTuB_ImmpSefe_9XNiXxJjU30ExcxTfB2Y3IpLwR0jDhkvngTjQH12pnzR3ENCcCEHa0H6Wo1pNrL0qhMWKUuDpaQUgGCc4N_jZHyBTXhg1MiSpx9bfzw2npwf511PZsWv39WavEd87rTw-VXk8P3DWkIq9A1dp64Yg_c4sl9xevbS6fsIf919OogLkP6HiTVlQXJz4WTihuUEeI5FRtl-92JedCv6T7v-XMbi05NlEtG4F1jniyRCXf8svnyJdfu8J3cajZzWNXs7JzyxQmOpp58Xce1dkdh6Ii5onzPlGLAMzCEAKZ4dKq6-K7Y5Mn0pu400ihpchKUK1YtrfAC13boFsloq_ZEVWG7cX1bJ6nAr7wwBCNG7uOLOSA9YaWnXteu1ovDJMsnNnidFQqRkAd96OsxqYfaylqgfoIPKNsbP4xAxP5jKd7IOyoqkLn0hl1AtnVkrycG1AngbEiOtYHE54k0M6aNLu5beAx1wRfrqjY1gnaSZ1h4UbfmX8yMfdEeOZ=w2149-h1611-no";
+                            break; 
+                        case '7':
+                            google_url = "https://lh3.googleusercontent.com/g4u4Qx24hjpWCNmskg8qSLiOxlHlQMTVg09xWa_gAl4eUclYsnKCunkGhiMq6xFAjF_WjzZ_Shjc-DGjZmIyY2W4ppdRk-zzLm2vkylO8TNOnbFUB_lhkU172iusGOkIEqlF0s3kvicEp2R1cYHjTnnSz619o5WXBbzgcmPrXCopJK79eQB9YOPRKcjCs4HlXc8AIbDRP28WC4PjkFObLr103mnewjJTNyX1gACxHO9bfkbogNHTfgLdiujq_TkYOc8Ez1_Osv31NNuz8VvppBqj1dawCP62iHI7i922lptvAcodkiPn99HtCp6HCUNcE-Bhdsu3vdYd2Wbff4x8qEo09-hg5_vjibR16ppbnZrf5fYqKyzhfKgw_Ubklm1x4Qi5UVfYG4xbz_rCsbBOFEjIbab7j-bRQBvh-O_eWbqsvqYlH73GcxjyjLN_B2BAtO3ctJUH9sWmVM-esdo25zWlshuL3EMhFXupwW9rXCE2D-jZdJMNm1t0UwyW6zacc3HmfehswMAqodXjdKtrdCpf_iGOJg4Iqjqyh36utezXJxV8nT-RRUN5QCldkl0ZLuazjoLsNlvSrkNBQ2amWTQUqz0G5YC3wk0-k7-9LbPFNFvC=w2258-h1694-no";
+                            break;      
+                        case '8':
+                            google_url = "https://lh3.googleusercontent.com/ovf3A0EPAqHEYkwsA8Iw4wN4m9FttPzunDdISHMFN7ZSH9ICv567ulGKauqbWtF95smvA2jlrSR4WlFR9TlCPVYYxD2SPxXjGtPAd5VHWcwj0lJRJ2qZtN9BoJRUvnoNbtY4rIND23JwKTkbYtXYd29_eN2dfHSRkQGD_yXVgApgGSBlU69nEJr_a-BBlkffR2cwy9mvfswWkCameWDCx4a-3B0b3gIj6ZNSgLQSYyDIxkrvVT7VqEPbMZwgOe3oy9NZdqYvVBm4GMdCHgQ6lXEZFb8_2VtzzUEydbqBFvdFsoyBg5P6zgMyzDuu9e5Va2eyscW2Ul1WtADhn4YBzFw9xQMUWvqkIXGnkC5NbiJvd3nM7FCtQHLV7DPqk1nm2IcNVjKvCMoVd2_mJ6SRlJniRg0HAnf4cuO1wOva9N7U3C3DPcWPjFOniiNdmuH2h6crm4TtjOWaBgomSn1ekVUvbphFviJzGCGoGqKIbJqih2gAzuj5QOh2HB0oCiP5YSOmLLLQk9BNQoxHejnpY2zJevpFH-qtM_UnSvmAmtVM4xTVSmOFaLcu-mP3MmJyFO-wkz5NnVDRTUmyhs4j6LSEMTm7z1yO7PLVILcpnPrSontq=w2272-h1704-no";
+                            break; 
+                        case '9':
+                            google_url = "https://lh3.googleusercontent.com/uZiXsYwAB_wQOPK8XqGIIVh7LFWqvnqvmT_xJvp8AwfJF7ppGEZAwZKUx1ZDBSKjuAzo1uuEWQ0dXCzyr-9cGKnvWzoBfd8-vyuQ_20CXUVxSjYU8J-PzL18NK5Fc0PFfgw2fBZgPTx5diDfzB9xfg8Gkfhq13DOO6R9CIsEBu4J4zipH9JxnmTM-gOdSlxGOF336-6BBaQZz3CBGS3DDBsv_qZ6W-cC17fcuga4U9KCEeGLp_9MfFUz9DCYR56HLP29EMzDxZ0U6YpIh5-Rk7tQ_hK1No-DbApWMllveg0HCZiaeFjXu7rds2gtVZbO8Po9I7GzZzpyNmrUdKnWdwt4X2wwhRt4nvCepQ7cCRePmHAk7aPd8ya9y4Mixe1depX7Z_5hZs4wGyH3t6sB3zo4DbMa-R2jVOCZUTSMOWsoyq6I-Jq2CqHH7HgdQp2smVCn169IVEQ8ywabIaSZP5alDrjkX2p26W_nS6WDCAX-NQPONpDVv4hK-LGtkGO-8kT2puJ5mXiMPH0gVR1eRS_YffsJIr0mCo3FNdP-TlbYKUJEBGJaI5EGj7MKFTEqjKg-rnc2-wAWIOW9wQLv_bu1fBco_RNmncYBlt20Uw_dyflQ=w2224-h1668-no";
+                            break;      
+                        case '10':
+                            google_url = "https://lh3.googleusercontent.com/dy_T94PW1UC7BlgAVUuB18Z2DmjzMLLdkmyGUy1mocVX1pUf06mhruKcZ0Gm5fLVW-kay4GrR7KWhxNwbEQlMWR68ov3atcs2RWEJ6mAEOF0wBV6mkv05JkZ3_2rtXgakTCGpIh8rP_AlR5xYjnxq9QuB0XyZn7s92H_FafJ2geOpl105qGMnNrz9visjy4kE2BcfObSl_eyC9dXt9-kserSzH3GCpIYvWzJ8ejFSzBNx-lkZRS5NvELb_6VKZuoptvRfI5eQnhx7JbSGq27lHIDZvpyv37uzlZ81qZIPuOE03t7gijWtJDNx_ZeoFGr99cdpQhuC-THR_vvDVRxnz0tagqqkUM5GGts-Z0U1SNVFPo4A3Gp2FUKiEjgS2w1eeNwjvGEtE9U84k56J4-hZ-rkjhmem82E5bsd2rnyw1V7OC4oDjr3uAROh1z7AIpJnEeY1ybo2fv0rehqQbtVmbPKy5xtlcyZKhrnn4JDugVyhPksukxTTEeTnfQRw7zsxyGEVyfbyrevNHcmahrn3RPuFu5xh0AgO9r8W1ewqW81Eoyi-KuCTrO1cXLrak4jB6jcQA9PqKupoW1RSf-lc_ceueDtBgVYU3CASZYMVUL4OFf=w2111-h1583-no";
+                            break; 
+                        case '11':
+                            google_url = "https://lh3.googleusercontent.com/W0VYbX-bImVJV_bP4zGcZAq3tMnYf5OY967vWAAfr25gnqwrrGVgoPqqRPqIYJPdFHZrxgPjPFfmmy6DS17mGeMx-3GO78nyDhzJcp4bs11WrZ63zF1ZXSOKUnq_uBZO-t5jmpHszpD2Ole_POwuPnxoMwPzJ5DXyH4hiCBTHBFyzuxaHQmmvBoHcY1EX2JAxl0mf48zRgTDceAuu3-JSk2BaeWpw3DYYNU8iDWjoCKwhqELwD4YNDmktRR66aHeZgRhuU4NzzLIGx2Y24MRG0p4lYLtIBM5JzMUZ_y4zhx1qC5EqNNUrboMq2IMuv9BpxIr0UX3-rlxmHFyCpO1JxFJBGUSql8RmGdnPMYf1oupVMiHd_rcfpLMoEFYPGSxtjvq-SAW8avMB3HaehrBi3Vfk085D351t18Bydve5KpoZlcn-ghHpFjSHwck31xWjkA57WI5em9XnYBxJPXNtgnnzyC-g7nD3kISHbQ9quzoJBAKS7T3tv6fIcPztm9n1wkka_qIIfDZxP1RVnLEZTZYkrA4mAlLMk1CVZj8l4q6fcGwvHJ2SzLP6qhZNVN0lPL503sdb7xEgB-FTkauWex5fQpUILaetAebQfE2PpWFcZY2=w2272-h1704-no";
+                            break;      
+                        case '12':
+                            google_url = "https://lh3.googleusercontent.com/-mrUti1RnagDj7Xbx-TcqOq6KYMZckmztG9zsB-IPCmQk52fRBzJ27oRwFyV8f1FVBXhbr4PLDrWQmr36vq2XxjbTV5mvDIpzrOvYYAMSLLCH9iOXXSZUR-lws821Fsq_IILCwhHonu90MAJTSeENp441ZgBeiktC7bB3bL8CXFAoLCyPV9O3CyS-RckXFOu5zUW0UNGuCdSWqtbpFUTPftR__7WkmIKUDgwJT_K6_lrv5E5ehepm4VX6djcvHHJAub-kuvQ9Axcdv-n9FVYmQrUXz8vTUbSPy6xfBnVECbELTRT1hvlxF0B7iLekogeAtT_aGbUnzK1bLAaFaeHmnIBkqleY5axWQeObJ7GVUbDM_Skc2NeARMJXR30-3OvAlTDNEmBY7fsDVpwNg_kq2SCy8v1q-gpCwRgJfu254iI_NWxwL0f3N0FXHFjvMwDDOvfBTSiCGbVVHVblWGGcb-TjzxTr3feM241Q8Y7mzelt1mo8Dr-NO0KNbtF7ZxgHrvOpwPr436fzICWM1r3zu0E3_-Jv8RFmB1-X4odS4AGOEChnPQAHtnQc8El6Z_NUwjxttv9Ct6GuJffUK2yI9UDOgFkuEWfyfPkvmSG-uHEl6gf=w2233-h1674-no";
+                            break; 
+                        default:
+                            break;
+                    }
+                    break;
+                // END CHINA
+                // BEGIN DEFAULT
+                default:
+                    google_url = "https://lh3.googleusercontent.com/jBsMDTyTjuxDUcHe-mIXJwxD7eRIvoi9jy7A3FWaBTkmfbjhJIXyKCUDxB8S9pxnCfeVKwn1LyDBj3qw60eHYWftPvpPF096KKn9-YJapTKxcseeMeftfMm4E17HyvpzzCH-3Xnra2ZXRYbk1Kd58SWSGo6L8nfoyyoCUyDI8gsHUG9_CaNC9sGxFrvKS7WGTglxkUipfdQrCJUJ7LgOaAJ01ieb2E8Ep34Quc1MId9nDcYJTlJYZXPAjyzw3lr2nffzFRMzY_4XXg5nHs27OEJ05YB0fmBfXaXbDkpBlqUxjrNQhkhfKyDIXHK0izYiYwU8phMK6JpQTx40iAtv9kFvpo2Td8DehA7evVu7TsLtvXFOhR9ZKB-nZDiLnc9fKPVNuYIWshjP2DHCLcTbWmHoI4T3Fh6k5wdDTF700kZadIxi8H4HPYCJypudvAnTQsRSBjHqMTqPCUjRslgCUN5tuXi47FO7wzg4hmoxSTNyPioqwwmaknnVsugml0V94COZxHhqOes0fqeaOEcNR8xguDg02Tr_2WgQARUbC7U34JjSKZ3VdAI1H9qPzt-oBMJnIQ2Y3Ne8-qAGWloILXWEyLwFP19HljTdJ7cVYvGKmxwY=w1736-h1302-no"; 
+                // ENG DEFAULT
+            }
+
+            // Set image source
+            document.getElementById("image-display-modal-bigimage").src = google_url;
+
+        } // End function
+
+     </script>
+
 
 </body>
 
