@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="the personal homepage of eric nielsen - engineer, programmer, world traveler">
+    <meta name="author" content="eric nielsen">
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/Q9d0AxcuSX_4SDFC-B1rMr5eovwQLUvWFp-_JW1Kcu1QfjzIsSbiWjVCTPDQXerza9jE8RqL_gNGnr9rabEsUeTl6YvGEH9N05RAhMJ1OxcdJIm-NhpLcsW5BWjKIYbPrq2XhQ" />
+
+    <title>eric nielsen - project 1</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+     <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-101501121-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
+    //  NAVIGATION 
+    ////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////-->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html" style="color:#08769C">home</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
+    //  WEB APP INPUT
+    ////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////-->    
+    <section id="project1-input" class="bg-light-gray" style="padding:50px;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">let's get some stock info...</h2>
+                </div>  
+            </div>    
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <form id = "submit1_form" action= method ="post">
+   				        <input type="text" style="width:300px;" class="input-block-level" id = "tickers" name = "tickers" placeholder="stock ticker (only one!)"><br>
+                        <p></p>
+   					    <input type="text" style="width:300px;" class="input-block-level" id = "start" name = "start" placeholder="start date (YYYY-MM-DD)">
+                        <p></p>
+   					    <input type="text" style="width:300px;" class="input-block-level" id = "end" name = "end" placeholder="end date (YYYY-MM-DD or today)">
+                        <p></p>
+                    </form>
+   				</div>
+   			</div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-large btn-primary" onclick="callmyserver('1'); this.blur();" id = "submit1_button"> submit </button>
+   				</div>
+   			</div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 id="result"></h3>
+   				</div>
+   			</div>
+
+        </div>
+    </section>
+
+    <section id="project1-output" style="padding:50px;">
+        <div class="container-fluid">
+            <div class="row-fluid">
+
+                    <div id="displayInfo">
+                        <div class="modal-header"> <h3 id="myModalLabel">Output:</h3> </div>
+                            <div id="stock-data" class="modal-body", style="max-height: 600px; overflow-y: auto;">
+                                Will populate after submit
+                                <!-- PHP is called on page load to populate content here -->
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!--////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
+    //  FOOTER 
+    ////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////--> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Eric Nielsen 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.linkedin.com/in/ernielsen"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://github.com/ericrnielsen"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/eric.r.nielsen/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">enielsen721 'at' gmail 'dot' com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
+    //  JAVASCRIPT 
+    ////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    //  DEFAULT 
+    /////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////
+    //  CUSTOM 
+    /////////////////////////////////////////////////////////////////////////////////////--> 
+
+     <script type="text/javascript">
+
+      ///////////////////////////////////////////////////////////////////////////////
+      // Trying to call php sitting on my main server
+      ///////////////////////////////////////////////////////////////////////////////
+        function callmyserver(for_what) {
+
+            // Getting stock data
+            if (for_what == '1') {
+                // Clear current output field
+                document.getElementById("stock-data").innerHTML = "Working...";
+                // Serialize data for request
+                var postData = $("#submit1_form").serializeArray();
+                // Make request, update output field with new html on success
+                var request = $.ajax({
+                    url : "http://ericrnielsen.me:8080/get-stock-data/get-stock-data.php",
+                    type : "POST",
+                    data : postData,
+                    success : function (resp) {
+                        console.log("SUCCESS!");
+                        document.getElementById("stock-data").innerHTML = resp;
+                    }
+                });
+            }
+
+        } // End function
+
+     </script>
+
+
+</body>
+
+</html>
