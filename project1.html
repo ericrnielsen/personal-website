@@ -70,7 +70,7 @@
     //  WEB APP INPUT
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////-->    
-    <section id="project1-input" class="bg-light-gray" style="padding:50px;">
+    <section id="project1-input" class="bg-light-gray" style="padding:25px;">
         <div class="container">
 
             <div class="row">
@@ -79,7 +79,7 @@
                 </div>  
             </div>    
 
-            <div class="row">
+            <div class="row" style="padding-top:20px;">
                 <div class="col-lg-12 text-center">
                     <form id = "submit1_form" action= method ="post">
    				        <input type="text" style="width:300px;" class="input-block-level" id = "tickers" name = "tickers" placeholder="stock ticker (only one!)"><br>
@@ -92,27 +92,21 @@
    				</div>
    			</div>
 
-            <div class="row">
+            <div class="row" style="padding-top:20px;">
                 <div class="col-lg-12 text-center">
                     <button type="button" class="btn btn-large btn-primary" onclick="callmyserver('1'); this.blur();" id = "submit1_button"> submit </button>
-   				</div>
-   			</div>
-
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 id="result"></h3>
    				</div>
    			</div>
 
         </div>
     </section>
 
-    <section id="project1-output" style="padding:50px;">
+    <section id="project1-output" style="padding:25px;">
         <div class="container-fluid">
             <div class="row-fluid">
 
                     <div id="displayInfo">
-                        <div class="modal-header"> <h3 id="myModalLabel">Output:</h3> </div>
+                        <div class="modal-header"> <h3 id="myModalLabel" style="margin-top:0px;">Output:</h3> </div>
                             <div id="stock-data" class="modal-body", style="max-height: 600px; overflow-y: auto;">
                                 Will populate after submit
                                 <!-- PHP is called on page load to populate content here -->

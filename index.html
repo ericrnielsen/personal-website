@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
 
      <!-- Google Analytics -->
     <script>
@@ -52,7 +52,7 @@
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////-->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
+        <div class="container container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -93,16 +93,16 @@
     /////////////////////////////////////////////////////////////////////////////////////-->    
     <header>
         <div class="container">
-            <div class="intro-text" style="padding-top:250px;">
+            <div class="intro-text">
                 <div class="intro-heading" style="margin-bottom:20px;">eric nielsen</div>
                 <div class="intro-lead-in" style="margin-bottom:35px;">engineer, programmer, world traveler</div>
                 <div style="text-align:center;">
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://www.linkedin.com/in/ernielsen" style="background-color:#fff;"><i class="fa fa-linkedin" style="background-color:#fff; color:#222;"></i></a>
+                        <li><a href="https://www.linkedin.com/in/ericrnielsen" style="background-color:#fff;"><i class="fa fa-linkedin" style="background-color:#fff; color:#222;"></i></a>
                         </li>
                         <li><a href="https://github.com/ericrnielsen" style="background-color:#fff;"><i class="fa fa-github" style="background-color:#fff; color:#222;"></i></a>
                         </li>
-                        <li><a href="https://www.instagram.com/eric.r.nielsen/" style="background-color:#fff;"><i class="fa fa-instagram" style="background-color:#fff; color:#222;"></i></a>
+                        <li><a href="https://angel.co/eric-nielsen-2" style="background-color:#fff;"><i class="fa fa-angellist" style="background-color:#fff; color:#222;"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -115,7 +115,7 @@
     //  WHO AM I 
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////-->    
-    <section id="whoami" class="bg-light-gray" style="padding:50px;">
+    <section id="whoami" class="bg-light-gray main-section">
         <div class="container">
 
             <div class="row">
@@ -124,16 +124,20 @@
                 </div>  
             </div>    
 
-            <div class="row" style="display:-webkit-box; display: -webkit-flex; display: -ms-flexbox;display:flex;">
-                <div class="col-sm-3 text-right">
-                    <div class="timeline-image"> <img class="img-circle img-responsive" src="img/headshot_20170330.jpg" alt style="width:150px; height:150px; display:inline-block; border: 7px solid #fff;"> </div>  
+            <!--<div class="row" style="display:-webkit-box; display: -webkit-flex; display: -ms-flexbox;display:flex;">-->
+            <div class="row">
+                <div class="col-lg-3 col-xs-12 text-right headshot">
+                    <div class="timeline-image"> <img class="img-circle img-responsive" src="img/headshot_current.jpg" alt style="width:150px; height:150px; display:inline-block; border: 7px solid #fff;"> </div>  
                 </div>  
 
-                <div class="col-sm-8 text-right">
+                <div class="col-lg-8 col-xs-12 text-right">
                     <h3 class="section-subheading text-muted" style="margin-bottom:10px; margin-top:10px; text-align:left;">
-                        hello! <b>i'm a software engineer with a background in computer engineering</b> (undergrad at purdue university) <b>and cyber security consulting</b> (2+ years at deloitte). i'm interested in data analytics 
-                        and machine learning; and i will be starting the m.s. computer science program at stanford university this coming fall. i currently work as a software engineering intern at 
-                        <a href="https://skive.it/about.html">Skive it</a> - an ai / deep learning startup.
+                        hello! <b>i'm a software engineer</b>, passionate about data analytics and machine learning. 
+                        i'm in the 2nd year of the <b>computer science masters program at stanford university</b> and will graduate in june 2019.
+                        i'm also currently serving as the <b>head of data & analytics</b> for <a href="https://blocklight.io/">blocklight</a> - an e-commerce analytics startup. 
+                        i have a background in computer engineering (undergrad at purdue university); 
+                        and i have experience in cyber security consulting (2+ years at <a href="https://www2.deloitte.com/us/en/pages/risk/solutions/cyber-risk-services.html">deloitte</a>) 
+                        and experience with both frontend and backend development (previous internships <a href="https://getqwerks.com/">qwerks</a> and <a href="https://www.nielsen.com/us/en.html">nielsen</a>).
                     </h3>
                 </div> 
 
@@ -146,13 +150,14 @@
     //  PROJECTS 
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////--> 
-    <section id="projects" style="padding:50px;">
+    <section id="projects" class="main-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-offset-1 col-lg-10 text-center">
                     <h2 class="section-heading">projects</h2>
                     <h3 class="section-subheading text-muted">
-                        like most software engineers, i'm usually tinkering with a few personal coding projects.</br>
+                        during my 1st year at stanford i worked on a number of exciting machine learning projects; 
+                        and like most software engineers, i'm usually tinkering with a few personal projects on the side.
                         a goal of mine is to get better at cleanly packaging / publishing my work - this section will expand as i improve.
                     </h3>
                 </div>
@@ -162,51 +167,60 @@
                 //  PROJECT 1 
                 /////////////////////////////////////////////////////////////////////////////////////--> 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1">
-                        <div class="portfolio-hover">
+                    <a href="https://goo.gl/wqdQWP" target="_blank">
+                        <!--<div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
-                        </div>
-                        <img src="img/coming-soon.png" class="img-responsive" alt="">
+                        </div>-->
+                        <img src="img/projects/project1.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>project 1</h4>
-                        <p class="text-muted">description</p>
+                        <h3>segmentation for satellite imagery</h3>
+                        <p class="text-muted">
+                            developed a U-Net CNN to detect features in satellite images; 
+                            implemented with Keras, using a semi-supervised autoencoder for segmentation pretraining
+                        </p>
                     </div>
                 </div>
                 <!--////////////////////////////////////////////////////////////////////////////////////
                 //  PROJECT 2 
                 /////////////////////////////////////////////////////////////////////////////////////-->              
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
+                    <a href="https://goo.gl/NXjXJn" target="_blank">
+                        <!--<div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
-                        </div>
-                        <img src="img/coming-soon.png" class="img-responsive" alt="">
+                        </div>-->
+                        <img src="img/projects/project2.png"  class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>project 2</h4>
-                        <p class="text-muted">description</p>
+                        <h3>cryptocurrency price prediction</h3>
+                        <p class="text-muted">
+                            developed a classifier to predict daily changes in coin prices using news and social media text sentiment; 
+                            implemented with SciKit-Learn and TensorFlow
+                        </p>
                     </div>
                 </div>
                 <!--////////////////////////////////////////////////////////////////////////////////////
                 //  PROJECT 3
                 /////////////////////////////////////////////////////////////////////////////////////-->                 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
+                    <a href="https://goo.gl/FjE4PJ" target="_blank">
+                        <!--<div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
-                        </div>
-                        <img src="img/coming-soon.png" class="img-responsive" alt="">
+                        </div>-->
+                        <img src="img/projects/project3.png"  class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>project 3</h4>
-                        <p class="text-muted">description</p>
+                        <h3>cryptocurrency portfolio management</h3>
+                        <p class="text-muted">
+                            developed a tool capable of profitably managing a portfolio using daily market data; 
+                            written in Python, using reinforcement learning to optimize an MDP
+                        </p>
                     </div>
                 </div>
             </div>
@@ -218,7 +232,7 @@
     //  TRAVEL 
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////--> 
-    <section id="travel" class="bg-light-gray" style="padding:50px;">
+    <section id="travel" class="bg-light-gray main-section">
         <div class="container">
 
             <div class="row">
@@ -226,7 +240,7 @@
                     <h2 class="section-heading">travel</h2>
                     <h3 class="section-subheading text-muted">
                         i love to travel; and i love to take pictures when i do. below are some of my favorites.</br>
-                        i particularly like panoramas. if you do too, check out <a href="panos.html">this page</a> that has far too many of mine.</br>
+                        i particularly like panoramas. if you do too, check out <a href="panos.html">this page</a> that has far too many of mine.
                         (improving photo editing skills = another goal)                   
                     </h3>  
                 </div>
@@ -254,7 +268,7 @@
                         <a onclick="load12grid('europe - summer 2012')" href="#image-12grid-modal" class="portfolio-link" data-toggle="modal">
                             <img src="img/travel/europe-2012/europe-2012-1-square.jpg" class="img-responsive img-circle" alt="">
                             <h3 style="margin-bottom:1px; margin-top:10px;">europe</h4>
-                            <h5 style="margin-bottom: 2px; margin-top:1px;">[with the sis]</h6>
+                            <h5 style="margin-bottom: 2px; margin-top:1px;">[family trip]</h6>
                             <p class="text-muted" style="margin-top:0px;">summer 2012</p>
                         </a>
                     </div>
@@ -293,7 +307,7 @@
                         <a onclick="load12grid('europe - summer 2014')" href="#image-12grid-modal" class="portfolio-link" data-toggle="modal">
                             <img src="img/travel/europe-2014/europe-2014-1-square.jpg" class="img-responsive img-circle" alt="">
                             <h3 style="margin-bottom:1px; margin-top:10px;">europe</h4>
-                            <h5 style="margin-bottom: 2px; margin-top:1px;">[graduated!]</h6>
+                            <h5 style="margin-bottom: 2px; margin-top:1px;">[post graduation]</h6>
                             <p class="text-muted" style="margin-top:0px;">summer 2014</p>
                         </a>
                     </div>
@@ -319,7 +333,7 @@
                         <a onclick="load12grid('southamerica - spring 2017')" href="#image-12grid-modal" class="portfolio-link" data-toggle="modal">
                             <img src="img/travel/southamerica-2017/southamerica-2017-1-square.jpg" class="img-responsive img-circle" alt="">
                             <h3 style="margin-bottom:1px; margin-top:10px;">south america</h4>
-                            <h5 style="margin-bottom: 2px; margin-top:1px;">[because machu]</h6>
+                            <h5 style="margin-bottom: 2px; margin-top:1px;">[machu picchu]</h6>
                             <p class="text-muted" style="margin-top:0px;">spring 2017</p>
                         </a>
                     </div>
@@ -334,7 +348,7 @@
     //  LIFE 
     ////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////-->  
-    <section id="life" style="padding:50px;">
+    <section id="life" class="main-section">
         <div class="container" style="width:auto;">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -352,7 +366,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/life/growingup.jpg" alt="">
                             </div>
-                            <div class="timeline-panel" style="padding-left:50px; width:43%;">
+                            <div class="timeline-panel my-timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 style="margin-top:10px; margin-bottom:2px;">growing up</h3>
                                     <h4 class="subheading" style="margin-bottom:5px;">1991 - 2010</h4>
@@ -374,7 +388,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/life/purdue1.jpg" alt="">
                             </div>
-                            <div class="timeline-panel" style="padding-right:50px; width:43%;">
+                            <div class="timeline-panel my-timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 style="margin-top:10px; margin-bottom:2px;">purdue, b.s. computer engineering</h3>
                                     <h4 class="subheading" style="margin-bottom:5px;">fall 2010 - spring 2014</h4>
@@ -397,7 +411,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/life/deloitte.jpg" alt="">
                             </div>
-                            <div class="timeline-panel" style="padding-left:50px; width:43%;">
+                            <div class="timeline-panel my-timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 style="margin-top:10px; margin-bottom:2px;">deloitte, cyber risk consulting</h3>
                                     <h4 class="subheading" style="margin-bottom:5px;">summer 2014 - fall 2016</h4>
@@ -419,7 +433,7 @@
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/life/purdue2.jpg" alt="">
                             </div>
-                            <div class="timeline-panel" style="padding-right:50px; width:43%;">
+                            <div class="timeline-panel my-timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 style="margin-top:10px; margin-bottom:2px;">purdue, grad school prep</h3>
                                     <h4 class="subheading" style="margin-bottom:5px;">spring 2017</h4>                                    
@@ -436,7 +450,7 @@
                         <!--////////////////////////////////////////////////////////////////////////////////////
                         //  SKIVE IT 
                         /////////////////////////////////////////////////////////////////////////////////////-->                        
-                        <li style="margin-bottom:75px;">
+                        <!--<li style="margin-bottom:75px;">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/life/skiveit.jpg" alt="">
                             </div>
@@ -447,10 +461,32 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">
-                                        current role: <b>software engineering intern</b> at Skive it &larr;</br>
-                                        working on both backend (<b>python, mysql</b>) and frontend (<b>html, js, php</b>) development &larr;</br>                                          
-                                        <a href="https://skive.it/about.html">Skive it</a> is a growing startup, <b>developing ai systems that can feel </b> using deep learning &larr;</br>     
-                                        check out our <a href="https://www.youtube.com/channel/UCJDncQhsw9PdPsNf-kdMMig">youtube channel</a> for some neat videos &larr;
+                                        completed a 2 month internship as a <b>software engineering intern</b> at skive it &larr;</br>
+                                        <b><a href="https://skive.it/about.html">skive it</a> is a startup, developing ai systems that can feel</b> using deep learning &larr;</br>                                             
+                                        worked to generate training data for a computer vision deep learning model via web-scraping and data cleansing / validation (<b>python, mysql</b>) &larr;</br> 
+                                        also developed tools to improve internal system monitoring and to support skive it's marketing team (<b>html, javascript, php, python </b>) &larr;</br>
+                                    </p>                                    
+                                </div>
+                            </div>
+                        </li>-->
+                        <!--////////////////////////////////////////////////////////////////////////////////////
+                        //  QWERKS 
+                        /////////////////////////////////////////////////////////////////////////////////////-->                        
+                        <li style="margin-bottom:75px;">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/life/qwerks.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel my-timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 style="margin-top:10px; margin-bottom:2px;">qwerks, software engineering</h3>
+                                    <h4 class="subheading" style="margin-bottom:5px;">summer 2017</h4>  
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        &rarr; completed a summer internship as a <b>software engineering intern</b> at qwerks </br>
+                                        &rarr; <b><a href="https://getqwerks.com/">qwerks</a> is a startup, providing quality monitoring software</b></br>                                                                                     
+                                        &rarr; led frontend development of new customer-facing website (<b>html, javascript, css, php, craft cms</b>) </br>                                
+                                        &rarr; built automated workflows for software demo requests, newsletter subscriptions, and company inquiries </br>
                                     </p>                                    
                                 </div>
                             </div>
@@ -458,21 +494,45 @@
                         <!--////////////////////////////////////////////////////////////////////////////////////
                         //  STANFORD 
                         /////////////////////////////////////////////////////////////////////////////////////--> 
-                        <li class="timeline-inverted" style="margin-bottom:0px;">
+                        <li class="timeline-inverted" style="margin-bottom:75px;">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/life/stanford.jpg" alt="">
                             </div>
-                            <div class="timeline-panel" style="padding-right:50px; width:43%;">
+                            <div class="timeline-panel my-timeline-panel">
                                 <div class="timeline-heading">
                                     <h3 style="margin-top:10px; margin-bottom:2px;">stanford, m.s. computer science</h3>
                                     <h4 class="subheading" style="margin-bottom:5px;">fall 2017 - spring 2019</h4>  
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">
-                                        &rarr; will be starting the <b>m.s. computer science program</b> at <b>stanford</b> this september </br> 
-                                        &rarr; planning to focus graduate studies on <b>data analytics</b> and <b>machine learning</b> </br> 
+                                        &rarr; many courses focused on machine learning (classification, regression, clustering, deep learning, reinforcement learning, Bayesian networks)</br> 
+                                        &rarr; others focused on dataset mining (MapReduce, locality-sensitive hashing, dimensionality reduction, recommender systems, network analysis)</br> 
+                                        &rarr; projects related to cryptocurrency portfolio management and price prediction; also satellite image segementation</br> 
                                     </p>                                
                                  </div>
+                            </div>
+                        </li>
+                        <!--////////////////////////////////////////////////////////////////////////////////////
+                        //  BLOCKLIGHT 
+                        /////////////////////////////////////////////////////////////////////////////////////-->                        
+                        <li style="margin-bottom:0px;">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/life/blocklight.png" alt="" style="background: white">
+                            </div>
+                            <div class="timeline-panel my-timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 style="margin-top:10px; margin-bottom:2px;">blocklight, head of data & analytics</h3>
+                                    <h4 class="subheading" style="margin-bottom:5px;">spring 2018 - current</h4>  
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        &rarr; leading full-stack development for blocklight, managing a team of 3 developers </br>
+                                        &rarr; <a href="https://blocklight.io/">blocklight</a> is a startup building an e-commerce <b>analytics platform and investment marketplace</b> </br>
+                                        &rarr; platform is built as a Django app, using a MySQL database and a frontend powered by Highcharts JS</br>                                                                                     
+                                        &rarr; designed and implemented a data pipeline to collect, store, and generate business-relevant metrics using data from 7 third-party APIs</br> 
+                                        &rarr; beta version is currently live</br>                                
+                                    </p>                                    
+                                </div>
                             </div>
                         </li>
 
@@ -491,7 +551,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p class="text-muted" style="margin-bottom:0px; font-size:130%;">
+                    <p class="text-muted" style="margin-bottom:0px; font-size:130%;"> 
                         <font face="Garamond"><i>we can only see a short distance ahead, but we can see plenty there that needs to be done.&emsp;-- alan turing</i></font>
                     </p>
                 </div>
@@ -508,7 +568,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Eric Nielsen 2017</span>
+                    <span class="copyright">Copyright &copy; Eric Nielsen 2018</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -516,7 +576,7 @@
                         </li>
                         <li><a href="https://github.com/ericrnielsen"><i class="fa fa-github"></i></a>
                         </li>
-                        <li><a href="https://www.instagram.com/eric.r.nielsen/"><i class="fa fa-instagram"></i></a>
+                        <li><a href="https://angel.co/eric-nielsen-2"><i class="fa fa-angellist"></i></a>
                         </li>
                     </ul>
                 </div>
